@@ -1,4 +1,10 @@
-root {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
     --primary-color: #333;
     --text-light: 'Arial', sans-serif;
     --text-dark: #333;
@@ -48,11 +54,6 @@ main {
 
 aside {
     width: 20rem;
-    margin: var(--standard-padding);
-    border: 1px solid rgba(0 0 0 /0.2); /* 1️⃣ */
-    padding: var(--standard-padding);
-    background-color: var(--background-light);
-    color: var(--text-dark);
     text-align: center;
 }
 
@@ -64,10 +65,21 @@ aside img {
 main img {
     width: var(--img-width);
     height: auto;
+    float: right;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box { 
+    margin: 1rem ;
+    border: 1px solid var(--#5a17172c);
+    padding: 1rem ;
+    background-color: var(--background-light);
+    color: var(--text-dark);
 }
