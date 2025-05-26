@@ -3,10 +3,13 @@
     --secondary-color: #3e885b
     --accent1-color: #85bda6
     --accent2-color: #bedcfe
-    --heading-font: "Roboto", sans-serif
-    --body-font: "Roboto", italic 
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
 }
 
+p {
+    font-style: italic ;
+}
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +35,7 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia {
+.social.media a {
     text-decoration: none;
 }
 
