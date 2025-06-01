@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #2f4b26
-    --secondary-color: #3e885b
-    --accent1-color: #85bda6
-    --accent2-color: #bedcfe
+    --primary-color: #2f4b26;
+    --secondary-color: #3e885b;
+    --accent1-color: #85bda6;
+    --accent2-color: #bedcfe;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -86,4 +86,111 @@ article {
     border-radius: 4px;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px 40px;
+    color: white;
+}
 
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.logo {
+    height: 70px;
+}
+
+.nav menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f5f5f5;
+}
+
+.history img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.adventures {
+    padding: 60px 40px;
+    background-color: #eaf4f4;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.adventure-gallery figure {
+    flex: 1 1 18%;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+
+.footer p {
+  color: #1a3a1a;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem; 
+}
+
+.social-media img {
+  width: 24px; 
+  height: 24px; 
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}
