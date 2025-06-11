@@ -344,3 +344,165 @@ nav {
 .contact-form button:hover {
   background-color: #005fa3;
 }
+.newsletter {
+  background-color: var(--accent2-color);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter input[type="email"] {
+  padding: 0.75rem;
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: var(--accent1-color);
+}
+
+.success-message {
+  display: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Trip section layout */
+.trip-options {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.trip-options h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+/* Trip cards */
+.trip-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.trip-card h3 {
+  margin: 0.5rem 0;
+  color: var(--secondary-color);
+}
+
+.trip-card p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* CTA button style */
+.btn-primary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .adventure-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .trip-card {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+}
