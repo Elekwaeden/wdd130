@@ -506,3 +506,60 @@ nav {
     justify-content: center;
   }
 }
+
+.trip-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip-card {
+  background: #fdfdfd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.trip-table-section {
+  margin: 3rem 2rem;
+}
+
+.trip-table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.cta-contact {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eaf4f4;
+}
+
+.cta-contact .btn-primary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3e885b;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cta-contact .btn-primary:hover {
+  background-color: #2f4b26;
+}
